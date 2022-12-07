@@ -1,0 +1,107 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>레인이 소개</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="rain2.jpg" width="200px" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">레인이 프로필</a></li>
+				<li><a href="#movie">레인이 소개</a></li>
+				<li><a href="#photo">레인이 갤러리</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+		<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>레인이 프로필</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="rain2.jpg" width="200px">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>소개</h3>
+					<p>레인이는 제가 키우고 있는 반려동물입니다.<br>
+					레인이는 초등학교 때부터 지금까지 약 13년간 같이 살고 있는 소중한 가족입니다.</p>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+		<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+
+			<h1>레인이 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+                    <h3>이름</h3>
+					<p>레인</p>
+				</div>
+				<div data-role="collapsible">
+                    <h3>견종</h3>
+					<p>시츄</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>성별</h3>
+					<p>수컷</p>
+				</div>
+				<div data-role="collapsible">
+					<h3>좋아하는거</h3>
+					<p>산책</p>
+                    <p>간식</p>
+                    <p>장난감</p>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+
+	<div data-role="page" id="photo" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>레인이 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+                <img src="rain.jpg" width="400px">
+                <img src="rain1.jpg" width="400px">
+                <img src="rain3.jpg" width="400px">
+
+            </ul>
+		</div>	
+	</div>
+</div>	
+</body>
+</html>
